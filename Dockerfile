@@ -1,7 +1,7 @@
 FROM ubuntu
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get -y --no-install-recommends install tzdata mlocate
+RUN apt-get update && apt-get -y --no-install-recommends install tzdata plocate
 
 COPY indexer.sh /indexer.sh
 COPY updatedb.sh /updatedb.sh
